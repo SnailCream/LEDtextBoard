@@ -13,7 +13,7 @@ func btnDesign(btnName: UIButton, btnContent: String) {
     btnName.setTitleColor(.black, for: .normal)
     
 }
-
+  
 class realMainViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel! // 텍스트가 보여지는 레이블
     
