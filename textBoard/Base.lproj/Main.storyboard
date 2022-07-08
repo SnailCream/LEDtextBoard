@@ -120,6 +120,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="btnSendAction:" destination="NL2-Yy-jSp" eventType="touchUpInside" id="UG0-Mm-smG"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n74-2y-DtJ">
                                         <rect key="frame" x="12" y="18" width="586" height="50"/>
@@ -148,8 +151,8 @@
                                     <constraint firstItem="IPX-ZF-oNe" firstAttribute="top" secondItem="aLg-5Z-Mdu" secondAttribute="top" constant="18" id="pZI-mj-IYG"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttj-rv-Iy7">
-                                <rect key="frame" x="74" y="197" width="748" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttj-rv-Iy7">
+                                <rect key="frame" x="74" y="207" width="748" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -175,9 +178,21 @@
                             <outletCollection property="gestureRecognizers" destination="3rU-Ek-W7v" appends="YES" id="KWa-zT-Hvg"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="btnChangeColor" destination="IPX-ZF-oNe" id="Soc-b3-EXp"/>
+                        <outlet property="btnSend" destination="XQM-Gy-vxO" id="LNC-oJ-igm"/>
+                        <outlet property="embedView" destination="aLg-5Z-Mdu" id="msE-l2-uLi"/>
+                        <outlet property="mainView" destination="YA1-gs-hYP" id="25I-ub-8pD"/>
+                        <outlet property="textLabel" destination="ttj-rv-Iy7" id="vqk-Di-p1z"/>
+                        <outlet property="userTextField" destination="n74-2y-DtJ" id="AXz-WA-nzX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKB-yH-Fow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="3rU-Ek-W7v"/>
+                <tapGestureRecognizer id="3rU-Ek-W7v">
+                    <connections>
+                        <action selector="tapGesture:" destination="NL2-Yy-jSp" id="xjZ-B0-wHp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-210" y="925"/>
         </scene>
